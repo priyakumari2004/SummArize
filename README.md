@@ -1,12 +1,36 @@
-# React + Vite
+# 📄 SummArize
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SummArize is a smart meeting assistant web app that takes an audio or video file as input and outputs the transcription, summary, key points, and a follow-up email draft, all powered by a clean, modern React frontend. The app simulates processing workflows with realistic mock data and is ready for backend integration.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📤 File Upload – Drag & drop audio/video files (max 100MB)
+- ✏️Transcription Viewer – Editable transcription with stats and export
+- 🧠 Meeting Summary– AI-style summary and key points display
+- 📧 Email Draft Generator – Smart, editable draft with subject and recipients
+  
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+- React 18
+- Vite– Fast dev server and bundler
+- Tailwind CSS – Utility-first styling
+-  Shadcn/UI – Modern, accessible component library
+- React Router DOM – Routing setup for future expansion
+- Lucide React – Icon library
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔄 How It Works
+
+1. **User uploads file**
+2. **Simulated processing**:
+   - Upload → Transcribe → Summarize → Complete
+3. **Mock output displayed**:
+   - Transcription + Summary + Email draft
+
+## 🧪 Run Locally
+
+'''bash
+#Install dependencies
+npm install
+
+#Start development server
+npm run dev
