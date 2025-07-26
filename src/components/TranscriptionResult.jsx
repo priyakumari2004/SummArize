@@ -3,12 +3,12 @@ import { Copy, Download, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
+import { toast } from 'sonner';
 
 const TranscriptionResult = ({ transcription }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editedTranscription, setEditedTranscription] = useState(transcription);
-  const { toast } = useToast();
+  //const { toast } = useToast();
 
   const handleCopy = async () => {
     try {

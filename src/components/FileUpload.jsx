@@ -1,12 +1,12 @@
 import React, { useCallback, useState } from 'react';
 import { Upload, FileAudio, FileVideo, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useToast } from '@/hooks/use-toast';
+import { toast } from 'sonner';
 
 const FileUpload = ({ onFileUpload }) => {
   const [dragActive, setDragActive] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null);
-  const { toast } = useToast();
+  //const { toast } = useToast();
 
   const handleDrag = useCallback((e) => {
     e.preventDefault();
@@ -162,4 +162,3 @@ const FileUpload = ({ onFileUpload }) => {
 };
 
 export default FileUpload;
-import React from 'react';

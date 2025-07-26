@@ -3,10 +3,10 @@ import { FileText, Key, Copy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { useToast } from '@/hooks/use-toast';
+import { toast } from 'sonner';
 
 const SummaryResult = ({ summary, keyPoints }) => {
-  const { toast } = useToast();
+  //const { toast } = useToast();
 
   const handleCopySummary = async () => {
     try {
